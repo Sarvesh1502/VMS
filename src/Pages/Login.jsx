@@ -20,7 +20,10 @@ const Login = () => {
          <div className="remember">
            <label><input type = "checkbox" />Remember me</label>
          </div>
-         <button type = "submit">Login</button>
+         <div className='button-container'>
+         <button type = "submit">Login as Student</button>
+         <button type = "submit">Login as Administrator</button>
+         </div>
          <div className="register-link">
            <p>First time volunteer? <a href='#'> Register!</a></p>
          </div>
