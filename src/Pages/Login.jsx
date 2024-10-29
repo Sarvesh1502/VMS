@@ -4,6 +4,7 @@ import './Login.css'
 import { FaUser, FaLock } from "react-icons/fa";
 const Login = () => {
   return (
+    <div className='login-page'>
     <div className='login-container'>
      <div className='wrapper'>
        <form>
@@ -28,6 +29,7 @@ const Login = () => {
            <p>First time volunteer? <a href='#'> Register!</a></p>
          </div>
        </form>
+     </div>
      </div>
      </div>
   )

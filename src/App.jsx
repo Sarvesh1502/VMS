@@ -1,6 +1,6 @@
 import React from 'react'
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { createBrowserRouter,RouterProvider  } from 'react-router-dom'
+import { createBrowserRouter,RouterProvider, useLocation  } from 'react-router-dom'
 import Login from './Pages/Login'
 import Register from './Pages/Register';
 import StdHome from './Pages/StdHome';
@@ -55,9 +55,15 @@ const router = createBrowserRouter(
      
         ]
 );
+
+
+
+
 const App = () => {
+ 
   return (
     <div>
+        
          <RouterProvider router={router} />
     </div>
   )

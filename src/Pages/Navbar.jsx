@@ -4,8 +4,15 @@ import './Navbar.css'
 
 function Navbar() {
   return (
-    <div>
-        <ul>
+    <header className='navbar-container' >
+        <ul className='navbar'>
+
+        <li>
+                <NavLink to= '/stdhome' className={({isActive}) => isActive ? "active-link" : ""}>
+                HOME
+                </NavLink>
+            </li>
+            
             <li>
                 <NavLink to= '/stddash' className={({isActive}) => isActive ? "active-link" : ""}>
                 DASHBOARD
@@ -24,7 +31,7 @@ function Navbar() {
                 </NavLink>
             </li>
         </ul>
-    </div>
+    </header >
   );
 }
 
