@@ -115,4 +115,8 @@
         gap: 10px; /* Adds 10px space between each button */
         }
 
-       
+        .error {
+            color: red;
+            font-size: 0.85em;
+            margin-top: 5px;
+          }
