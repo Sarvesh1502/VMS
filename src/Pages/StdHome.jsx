@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const StdHome = () => {
-  return (
-    <div>
-       Home
-    </div>
-  )
-}
+  return <div style={{ paddingTop: "70px" }}>Home</div>;
+};
 
-export default StdHome
+export default StdHome;
