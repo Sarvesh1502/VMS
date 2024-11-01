@@ -1,9 +1,10 @@
 import React from 'react'
+import './AdminLogin.css';
 import { Link } from 'react-router-dom';
-import './Login.css'
 import { FaUser, FaLock } from "react-icons/fa";
-const Login = () => {
+const AdminLogin = () => {
   return (
+    <div className='login-page'>
     <div className='login-container'>
      <div className='wrapper'>
        <form>
@@ -20,14 +21,16 @@ const Login = () => {
          <div className="remember">
            <label><input type = "checkbox" />Remember me</label>
          </div>
+         <div className='button-container'>
+         
          <button type = "submit">Login</button>
-         <div className="register-link">
-           <p>First time volunteer? <a href='#'> Register!</a></p>
          </div>
+        
        </form>
+     </div>
      </div>
      </div>
   )
 }
 
-export default Login
+export default AdminLogin
