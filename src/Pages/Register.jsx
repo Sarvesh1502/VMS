@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useState } from "react";
 import "./Register.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [fullname, setFullname] = useState("");
@@ -11,8 +14,11 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     let validationErrors = {};
 
@@ -70,8 +76,10 @@ const Register = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
+    }
+    try {
       //! API CALL
-      console.log("Form Submitted :", {
+      const response = await axios.post("http://localhost:5003/signup", {
         fullname,
         branch,
         srn,
@@ -80,6 +88,27 @@ const Register = () => {
         email,
         password,
       });
+
+      if (response.status === 201) {
+        setSuccessMessage("Registration successful!");
+
+        // Redirect to /stdlogin after 2 seconds
+        setTimeout(() => {
+          navigate("/stdlogin");
+        }, 2000);
+
+        //! CLEAR FORM
+        setFullname("");
+        setBranch("");
+        setSrn("");
+        setYear("");
+        setSemester("");
+        setEmail("");
+        setPassword("");
+      }
+    } catch (error) {
+      console.error("Signup error:", error);
+      setErrors({ api: error.response?.data?.message || "Signup failed" });
     }
   };
 
@@ -89,7 +118,8 @@ const Register = () => {
         <div className="register-wrapper">
           <form onSubmit={handleSubmit}>
             <h1>REGISTER</h1>
-
+            {successMessage && <p className="success">{successMessage}</p>}
+            {errors.api && <p className="error">{errors.api}</p>}
             <div className="input-box">
               <input
                 placeholder="Enter Full Name"

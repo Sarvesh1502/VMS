@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 const mongoose=require("mongoose");
 const required = require("required");
 const connect=mongoose.connect("mongodb://localhost:27017/Login");

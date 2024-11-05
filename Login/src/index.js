@@ -1,4 +1,6 @@
+/* eslint-disable no-undef */
 const express = require("express");
+// eslint-disable-next-line no-unused-vars
 const path = require("path");
 const bcrypt = require("bcrypt");
 const { Student } = require("./config");  // Ensure your config file exports the Student model correctly

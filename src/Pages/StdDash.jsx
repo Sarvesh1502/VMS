@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import "./StdDash.css";
