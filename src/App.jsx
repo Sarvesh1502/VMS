@@ -16,7 +16,7 @@ import Navbar from "./Pages/Navbar";
 import Sidebar from "./Pages/Sidebar";
 import Landing from "./Pages/Landing";
 import AdminLogin from "./Pages/AdminLogin";
-import CreateEvent from "./Pages/CreateEvent";
+import CreateEvent from "./Pages/CreateEventAdmin";
 
 import PendingRequests from "./Pages/PendingRequests";
 import EventHistory from "./Pages/EventHistory";
