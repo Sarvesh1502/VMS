@@ -1,11 +1,11 @@
-/* Sidebar.css */
 
-/* Sidebar Container */
+
+/* Container */
 .sidebar {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background-color: #000; 
+  color: #fff;
   width: 250px;
-  height: 100vh; /* Full height of viewport */
+  height: 100vh; 
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Sidebar Title */
+/*Title */
 .sidebar-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -26,14 +26,14 @@
   letter-spacing: 1.5px;
 }
 
-/* Sidebar Menu List */
+/*Menu List */
 .sidebar-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Sidebar Menu Item */
+/* Menu Item */
 .menu-item {
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease-in-out;
@@ -43,9 +43,9 @@
   margin-bottom: 0;
 }
 
-/* Sidebar Links */
+/* Link */
 .menu-item a {
-  color: #fff; /* White text */
+  color: #fff; 
   text-decoration: none;
   font-size: 1.1rem;
   padding: 10px 15px;
@@ -54,16 +54,16 @@
   transition: all 0.3s ease;
 }
 
-/* Hover and Active States */
+
 .menu-item a:hover,
 .menu-item a.active {
-  background-color: #ffc107; /* Yellow background */
-  color: #000; /* Black text */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #ffc107; 
+  color: #000; 
+  transform: scale(1.1); 
   box-shadow: 0 4px 6px rgba(255, 193, 7, 0.5);
 }
 
-/* Animation on Menu Items */
+
 .menu-item {
   animation: slideIn 0.5s ease;
 }
