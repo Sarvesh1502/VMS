@@ -1,6 +1,5 @@
 
 
-/* Container */
 .sidebar {
   background-color: #000; 
   color: #fff;
@@ -16,7 +15,9 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/*Title */
+
+
+
 .sidebar-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -26,14 +27,14 @@
   letter-spacing: 1.5px;
 }
 
-/*Menu List */
+
 .sidebar-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Menu Item */
+
 .menu-item {
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease-in-out;
@@ -43,7 +44,7 @@
   margin-bottom: 0;
 }
 
-/* Link */
+
 .menu-item a {
   color: #fff; 
   text-decoration: none;

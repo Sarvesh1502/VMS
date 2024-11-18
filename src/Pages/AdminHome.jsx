@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './AdminHome.css';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
+import Sidebar from './Sidebar';
 import { NavLink } from 'react-router-dom';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 
 const eventsData = [
   { name: 'Event 1', participants: 200 },
@@ -22,7 +23,7 @@ const COLORS = ['#00C49F', '#FFBB28', '#FF8042'];
 function AdminHome() {
   return (
     <div className="dashboard-container">
-      
+      <Sidebar />
       <div className="main-content">
         <Header />
         <Stats />
@@ -32,13 +33,10 @@ function AdminHome() {
   );
 }
 
-
-
 function Header() {
   return (
     <div className="header">
-      
-      <button className="create-event-btn"><NavLink to= '/createevent'>+ Create Event</NavLink></button>
+      <NavLink to ="/createevent" className="create-event-btn">Create Event</NavLink>
     </div>
   );
 }
