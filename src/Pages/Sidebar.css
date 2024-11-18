@@ -1,50 +1,80 @@
-/* Sidebar */
+/* Sidebar.css */
+
+/* Sidebar Container */
 .sidebar {
-    width: 250px;
-    height: 100vh; 
-    position: fixed; 
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, #4b79a1, #283e51);
-    color: white;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  width: 250px;
+  height: 100vh; /* Full height of viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Sidebar Menu List */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar Menu Item */
+.menu-item {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar Links */
+.menu-item a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover and Active States */
+.menu-item a:hover,
+.menu-item a.active {
+  background-color: #ffc107; /* Yellow background */
+  color: #000; /* Black text */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 6px rgba(255, 193, 7, 0.5);
+}
+
+/* Animation on Menu Items */
+.menu-item {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
   }
-  
-  .sidebar-title {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    flex-grow: 1; 
-  }
-  
-  .menu-item {
-    width: 100%;
-  }
-  
-  .menu-item a {
-    display: block; 
-    width: 100%;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1em;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .menu-item a:hover,
-  .menu-item a.active {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    color: #ffeb3b; 
-  }
-  
-  
+}
