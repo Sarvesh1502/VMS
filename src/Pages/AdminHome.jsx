@@ -37,7 +37,7 @@ function AdminHome() {
 function Header() {
   return (
     <div className="header">
-      <h1>Admin Home</h1>
+      
       <button className="create-event-btn"><NavLink to= '/createevent'>+ Create Event</NavLink></button>
     </div>
   );
