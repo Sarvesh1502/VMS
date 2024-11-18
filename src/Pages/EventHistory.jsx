@@ -3,7 +3,7 @@ import React from 'react'
 
 const EventHistory = () => {
   return (
-    <div>EventHistory</div>
+    <div>EventHistoryada</div>
   )
 }
 
