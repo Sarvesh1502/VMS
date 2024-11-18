@@ -1,14 +1,14 @@
 /* Container */
 .event-list-admin-container {
-    margin-left: 125px; /* Sidebar width */
+    margin-left: 125px; 
     padding: 20px;
     background-color: #000000;
     height: 100vh;
     overflow-y: auto;
-    color: #333; /* Added color for better text visibility */
+    color: #333; 
   }
   
-  /* Title */
+  
   .event-list-admin-container h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -16,14 +16,14 @@
     color: white;
   }
   
-  /* Event List */
+ 
   .event-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  /* Event Card */
+
   .event-card {
     background: #ffffff;
     padding: 20px;
@@ -38,7 +38,7 @@
     margin-bottom: 15px;
   }
   
-  /* Event Stats */
+  
   .event-stats {
     margin-bottom: 20px;
   }
@@ -59,7 +59,7 @@
   
   .progress-fill {
     height: 100%;
-    background-color: #28a745; /* Green */
+    background-color: #28a745; 
     border-radius: 5px;
     transition: width 0.5s ease;
   }

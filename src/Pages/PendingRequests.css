@@ -1,19 +1,19 @@
-/* General Layout */
+
 .event-list-container {
-    margin-left: 125px; /* Align with the sidebar */
+    margin-left: 125px; 
     padding: 20px;
-    background-color: #f5f5f5; /* Match sidebar theme */
+    background-color: #f5f5f5; 
     min-height: 100vh;
   }
   
   .event-list-title {
     font-size: 1.8rem;
-    color: #2c3e50; /* Darker color for better contrast */
+    color: #2c3e50; 
     margin-bottom: 20px;
     font-weight: bold;
   }
   
-  /* Event List */
+
   .event-list {
     list-style: none;
     padding: 0;
@@ -36,7 +36,7 @@
     padding: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    color: #2c3e50; /* Dark font color */
+    color: #2c3e50; 
   }
   
   .event-header:hover {
@@ -50,15 +50,15 @@
   
   .event-date {
     font-size: 1rem;
-    color: #7f8c8d; /* Slightly lighter color for secondary text */
+    color: #7f8c8d;
   }
   
-  /* Event Details */
+
   .event-details {
     padding: 15px 20px;
     border-top: 1px solid #ddd;
     background-color: #fafafa;
-    color: #34495e; /* Medium-dark text color */
+    color: #34495e; 
   }
   
   .request-list {
@@ -81,7 +81,7 @@
   
   .request-name {
     font-size: 1rem;
-    color: #2c3e50; /* Dark text color for better readability */
+    color: #2c3e50;
   }
   
   .request-actions button {
@@ -94,7 +94,7 @@
   }
   
   .approve-btn {
-    background-color: #27ae60; /* Brighter green */
+    background-color: #27ae60; 
     color: #fff;
     margin-right: 5px;
   }
@@ -104,7 +104,7 @@
   }
   
   .deny-btn {
-    background-color: #c0392b; /* Brighter red */
+    background-color: #c0392b;
     color: #fff;
   }
   
