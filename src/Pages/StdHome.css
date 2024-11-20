@@ -50,7 +50,7 @@ body {
 .jumbotron {
     position: relative;
     padding: 5rem;
-    color: white;
+    color: black;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
