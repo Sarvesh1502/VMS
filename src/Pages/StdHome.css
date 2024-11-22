@@ -101,3 +101,15 @@ body {
     from { transform: translateX(-20px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
+.text-glow {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff8c00, 0 0 30px #ff4500;
+}
+
+.card.reason-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.reason-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
