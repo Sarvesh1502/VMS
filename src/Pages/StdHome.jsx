@@ -22,8 +22,8 @@ const StdHome = () => {
             <div
                 className="container my-5"
                 style={{
-                    background: "linear-gradient(to right, #ff7eb3, #ff758c, #ff6263)",
-                    color: "#fff",
+                    background: "linear-gradient(to right, #add8e6, #87ceeb)", // Light blue background
+                    color: "#fff", // White text
                     borderRadius: "10px",
                     padding: "2rem",
                 }}
@@ -45,14 +45,14 @@ const StdHome = () => {
                 <div className="row">
                     {/* Personal Growth Card */}
                     <div className="col-md-4 mb-3" data-aos="flip-left">
-                        <div className="card reason-card" style={{ background: "#fceabb", borderRadius: "10px" }}>
+                        <div className="card reason-card" style={{ background: "#add8e6", borderRadius: "10px" }}>
                             <div className="card-body text-center">
                                 <div className="icon-bounce">
                                     <i className="bi bi-person-circle" style={{ fontSize: "2rem", color: "#ff4500" }}></i>
                                 </div>
                                 <h5 className="card-title">Personal Growth</h5>
                                 <p className="card-text">
-                                    At REVA, volunteering helps you build confidence, enhance your skills, and step outside your comfort zone. Join activities that allow you to discover your strengths while contributing to the university's vibrant community.
+                                    At REVA, volunteering helps you build confidence and enhance your skills. Join activities that allow you to discover your strengths while contributing to the university's vibrant community.
                                 </p>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const StdHome = () => {
 
                     {/* Network & Connect Card */}
                     <div className="col-md-4 mb-3" data-aos="flip-left" data-aos-delay="200">
-                        <div className="card reason-card" style={{ background: "#b4f8c8", borderRadius: "10px" }}>
+                        <div className="card reason-card" style={{ background: "#add8e6", borderRadius: "10px" }}>
                             <div className="card-body text-center">
                                 <div className="icon-bounce">
                                     <i className="bi bi-people-fill" style={{ fontSize: "2rem", color: "#00bfff" }}></i>
@@ -75,7 +75,7 @@ const StdHome = () => {
 
                     {/* Make an Impact Card */}
                     <div className="col-md-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-                        <div className="card reason-card" style={{ background: "#c3aed6", borderRadius: "10px" }}>
+                        <div className="card reason-card" style={{ background: "#add8e6", borderRadius: "10px" }}>
                             <div className="card-body text-center">
                                 <div className="icon-bounce">
                                     <i className="bi bi-heart-fill" style={{ fontSize: "2rem", color: "#ff1493" }}></i>
@@ -99,3 +99,4 @@ const StdHome = () => {
 };
 
 export default StdHome;
+
